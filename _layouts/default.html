@@ -3,24 +3,19 @@
 
     <head>
         <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
-
         <!--[if lt IE 9]>
-      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
         <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0">
-        <meta name="description"
-            content="Infos zum Modul Screendesign im Studiengang Medieninformatik Bachelor an der TH Köln, denn das beste, interessante, eigenständigste Designkonzept ist wenig wert, wenn es nicht umgesetzt wird oder gar werden kann.">
+        <meta name="description" content="{{ site.description }}">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
         <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/styles/style.css" />
-        <link rel="shortcut icon" type="image/x-icon" href="{{site.baseurl}}/favicon.ico">
-
-
+        <link rel="shortcut icon" type="image/x-icon" href="{{site.baseurl}}/assets/images/favicon.ico">
     </head>
 
     <body data-url="{{page.url}}">
-        <section class="hero is-info is-small"
-            style="background-image: url({{ site.baseurl }}/images/hero.svg); background-size: contain; background-repeat: no-repeat; background-position: center center;">
+        <section class="hero is-black is-small">
             <!-- Hero header: will stick at the top -->
             <div class="hero-head">
                 <header class="nav">
@@ -59,22 +54,6 @@
                     </h2>
                 </div>
             </div>
-
-            <!-- Hero footer: will stick at the bottom -->
-            <!--div class="hero-foot">
-	    <nav class="tabs is-boxed is-fullwidth">
-	      <div class="container">
-	        <ul>
-	          <li class="is-active"><a>Overview</a></li>
-	          <li><a>Modifiers</a></li>
-	          <li><a>Grid</a></li>
-	          <li><a>Elements</a></li>
-	          <li><a>Components</a></li>
-	          <li><a>Layout</a></li>
-	        </ul>
-	      </div>
-	    </nav>
-	  </div-->
         </section>
 
         {{ content }}

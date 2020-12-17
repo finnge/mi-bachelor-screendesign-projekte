@@ -19,6 +19,11 @@ $subtitle-strong-weight: $weight-semibold !default
     font-weight: inherit
   .tag
     vertical-align: middle
+  &.is-inverse
+    background-color: $mi-black;
+    display: inline-block;
+    padding: .25rem;
+    margin-bottom: 0 !important;
 
 .title
   color: $title-color
@@ -43,6 +48,9 @@ $subtitle-strong-weight: $weight-semibold !default
   font-size: $subtitle-size
   font-weight: $subtitle-weight
   line-height: 1.25
+
+  &.is-inverse
+    background-color: $primary;
   strong
     color: $subtitle-strong-color
     font-weight: $subtitle-strong-weight

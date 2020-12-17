@@ -7,6 +7,9 @@ name: Projektergebnisse Screendesign
 # Short bio or description (displayed in the header)
 description: Medieninformatik am Campus Gummersbach
 
+# Description for Meta
+description_long: Projektergebnisse der Studierenden aus dem Modul Screendesign im Studiengang Medieninformatik Bachelor an der TH Köln.
+
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://raw.githubusercontent.com/th-koeln/mi-2017/master/images/box.png
 
@@ -27,7 +30,7 @@ editbase: https://github.com/th-koeln/mi-bachelor-screendesign-projekte/edit/mas
 
 # Navigation
 navigation:
-  - url: /
+  - url: 
     name: Alle Projektergebnisse
 
   - url: https://th-koeln.github.io/mi-bachelor-screendesign/

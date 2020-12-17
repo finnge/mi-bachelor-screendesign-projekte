@@ -1,16 +1,16 @@
 ---
-layout: default
+layout: projekt
 title: «Bilder vergleichen» im Cranach Digital Archive
 people:
-    - vorname: Christian
-      name: Noss
-    - vorname: Volker
-      name: Schaefer
-header_image: noss-schaefer-header.jpg
+    - Christian Noss
+    - Volker Schaefer
+teaserimage: noss-schaefer-header.png
 gallery:
     - noss-schaefer-image1.jpg
     - noss-schaefer-image2.jpg
     - noss-schaefer-image3.jpg
+kontext: Cranach Digital Archive
+semester: Wintersemester 2020/21
 ---
 
 Im Rahmen des Projektes wurden alternative Ansichten zu dem Cranach Digital Archive (CDA) entwickelt, um die Fülle an Information und Artefakten für Laien zu ordnen, um so eine explorative und gezielte Suche zu ermöglichen.
