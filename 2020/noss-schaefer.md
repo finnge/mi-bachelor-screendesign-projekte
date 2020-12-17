@@ -6,9 +6,13 @@ people:
     - Volker Schaefer
 teaserimage: noss-schaefer-header.png
 gallery:
-    - noss-schaefer-image1.jpg
-    - noss-schaefer-image2.jpg
-    - noss-schaefer-image3.jpg
+    - https://finnge.github.io/mi-sd-cranachproject/assets/img/tablet/cda_timeline_size-mid.png
+    - https://finnge.github.io/mi-sd-cranachproject/assets/img/smartphone/cda_timeline_size-max.png
+    - https://finnge.github.io/mi-sd-cranachproject/assets/img/smartphone/cda_timeline_size-mid.png
+    - https://finnge.github.io/mi-sd-cranachproject/assets/img/tablet/cda_timeline_size-max.png
+    - https://finnge.github.io/mi-sd-cranachproject/assets/img/smartphone/cda_timeline_size-small.png
+    - https://finnge.github.io/mi-sd-cranachproject/assets/img/tablet/cda_timeline_rad.png
+    - noss-schaefer-header.png
 kontext: Cranach Digital Archive
 semester: Wintersemester 2020/21
 ---

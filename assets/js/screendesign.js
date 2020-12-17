@@ -258,3 +258,19 @@ markdown.init = function () {
 document.addEventListener("DOMContentLoaded", function (event) {
   markdown.init();
 });
+
+
+
+/* Artefakt slideshow
+------------------------------------------------------------------------------*/
+
+var artefakt_swiper = new Swiper('.swiper-container', {
+  slidesPerView: 'auto',
+  spaceBetween: 30,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.next',
+    prevEl: '.prev',
+  }
+})
