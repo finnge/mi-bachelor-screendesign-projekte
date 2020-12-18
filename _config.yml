@@ -37,6 +37,11 @@ navigation:
     name: Modulseite
 
 
+# Collection
+collections:
+    jg2020:
+        output: true
+
 ## Build
 
 permalink: /:title/

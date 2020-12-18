@@ -2,26 +2,32 @@
 layout: default
 ---
 
-
 <section class="section">
     <div class="container">
-        <div class="content">
-            <div class="columns">
-                <div class="column is-8">
-                    <h1>{{ page.titel }}</h1>
-                </div>
 
-                <div class="column is-4 has-text-right">
-                    hi
-                    <!--a target="_blank" href="https://github.com/th-koeln/mi-bachelor-gdvk/edit/master/{{ page.path }}"><span class="icon"><i class="fa fa-edit"></i></span> Bearbeiten</a-->
-                </div>
+        <h3 class="title is-1">Projekt 2020: Funktionserweiterung «Bilder vergleichen»</h1>
+        <h4 class="subtitle">Cranach Digital Archive</h2>
+        <div class="content">
+            <p>Entwickeln Sie ein Gestaltungs- und Interktionskonzept für die Funktionserweiterung «Bilder vergleichen».
+                Analysieren Sie das bestehende Design des Grafikbereichs und bauen Sie Ihre Erweiterung darauf auf.
+                Berücksichtigen Sie die funktionalen und kommunikativen Ziele. Die Erweiterung muss für größere
+                Touchdevices (z.B. Tablets) und WIMP-fähige Computer funktionieren.</p>
+        </div>
+
+        <div class="is-tab-wrap">
+
+        {% for projekt in site.jg2020 %}
+        <div class="card is-overview-item is-tab-content">
+            <img src="{{site.baseurl}}{{projekt.url}}../{{projekt.teaserimage}}" class="card-image">
+
+            <div class="card-footer">
+                <p><a class="card-footer-item"
+                        href="{{site.baseurl}}{{projekt.url}}">{{ projekt.people | join: ' & '}}</a></p>
             </div>
         </div>
-    </div>
-    <hr>
-    <div class="container zweispalter">
-        <div class="content">
-            {{ content }}
+        {% endfor %}
+
         </div>
+
     </div>
 </section>
