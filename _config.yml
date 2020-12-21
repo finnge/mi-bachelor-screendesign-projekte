@@ -39,8 +39,27 @@ navigation:
 
 # Collection
 collections:
-    jg2020:
+    kurzdokus:
         output: true
+        permalink: /:path/
+    projekte:
+        output: true
+        permalink: /:path/
+
+# Defailts
+defaults:
+  -
+    scope:
+      path: ""
+      type: kurzdokus
+    values:
+      layout: kurzdoku
+  -
+    scope:
+      path: ""
+      type: projekte
+    values:
+      layout: projekt
 
 ## Build
 

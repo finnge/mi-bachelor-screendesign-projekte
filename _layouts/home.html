@@ -1,33 +1,38 @@
 ---
 layout: default
 ---
-
+{% assign projekte = site.projekte | reverse %}
+{% for projekt in projekte %}
 <section class="section">
     <div class="container">
 
-        <h3 class="title is-1">Projekt 2020: Funktionserweiterung «Bilder vergleichen»</h1>
-        <h4 class="subtitle">Cranach Digital Archive</h2>
-        <div class="content">
-            <p>Entwickeln Sie ein Gestaltungs- und Interktionskonzept für die Funktionserweiterung «Bilder vergleichen».
-                Analysieren Sie das bestehende Design des Grafikbereichs und bauen Sie Ihre Erweiterung darauf auf.
-                Berücksichtigen Sie die funktionalen und kommunikativen Ziele. Die Erweiterung muss für größere
-                Touchdevices (z.B. Tablets) und WIMP-fähige Computer funktionieren.</p>
-        </div>
+        <h3 class="title is-1">{{ projekt.title }}: {{ projekt.subtitle }}</h1>
+            <h4 class="subtitle">{{ projekt.context }}</h2>
+                <div class="content">
+                    <p>{{ projekt.excerpt | strip_html }} <a
+                            href="{{site.baseurl}}{{ projekt.url }}" title="Über das Projekt">Mehr erfahren...</a></p>
+                </div>
 
-        <div class="is-tab-wrap">
+                <div class="is-tab-wrap">
 
-        {% for projekt in site.jg2020 %}
-        <div class="card is-overview-item is-tab-content">
-            <img src="{{site.baseurl}}{{projekt.url}}../{{projekt.teaserimage}}" class="card-image">
+                    {% for kurzdoku in site.kurzdokus %}
+                    {% assign projekt_id = kurzdoku.url | remove_first: "/" | split: "/" | first | prepend: "/" %}
+                    {% if projekt_id != projekt.id %}
+                        {% continue %}
+                    {% endif %}
 
-            <div class="card-footer">
-                <p><a class="card-footer-item"
-                        href="{{site.baseurl}}{{projekt.url}}">{{ projekt.people | join: ' & '}}</a></p>
-            </div>
-        </div>
-        {% endfor %}
+                    <div class="card is-overview-item is-tab-content">
+                        <img src="{{site.baseurl}}{{projekt.url}}{{kurzdoku.teaserimage}}" class="card-image">
 
-        </div>
+                        <div class="card-footer">
+                            <p><a class="card-footer-item"
+                                    href="{{site.baseurl}}{{kurzdoku.url}}">{{ kurzdoku.people | join: ' & '}}</a></p>
+                        </div>
+                    </div>
+                    {% endfor %}
+
+                </div>
 
     </div>
 </section>
+{% endfor %}
