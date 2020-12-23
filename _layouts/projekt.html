@@ -40,7 +40,7 @@
                             <span></span>
                         </span>
                         <div class="nav-right nav-menu">
-                            {% for item in site.navigation %}
+                            {% for item in site.data.nav %}
                             {% if item.url contains "http" %}
                             <a class="nav-item" href="{{item.url}}" class="nav-item">{{item.name}}</a>
                             {% else %}

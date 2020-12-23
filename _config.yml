@@ -28,15 +28,6 @@ baseurl: "/mi-bachelor-screendesign-projekte"
 
 editbase: https://github.com/th-koeln/mi-bachelor-screendesign-projekte/edit/master/
 
-# Navigation
-navigation:
-  - url: 
-    name: Alle Projektergebnisse
-
-  - url: https://th-koeln.github.io/mi-bachelor-screendesign/
-    name: Modulseite
-
-
 # Collection
 collections:
     kurzdokus:
