@@ -2,6 +2,10 @@
 ---
 
 @import "variables";
+
+$fullhd: 960px;
+$widescreen: 1152px;
+
 @import "bulma";
 @import "overrides";
 
@@ -17,7 +21,7 @@
 
 body,
 html {
-  line-height: 130%;
+  line-height: 1.5;
 }
 
 /**************/
@@ -185,6 +189,7 @@ $tt-grid-height: 60px;
 .is-tab-wrap {
   display: flex;
   flex-wrap: wrap;
+  margin: 20px 0;
 
   .card {
     display: flex;

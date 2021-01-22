@@ -9,8 +9,8 @@ layout: default
         <h3 class="title is-1">{{ projekt.title }}: {{ projekt.subtitle }}</h1>
             <h4 class="subtitle">{{ projekt.context }}</h2>
                 <div class="content">
-                    <p>{{ projekt.excerpt | strip_html }} <a
-                            href="{{site.baseurl}}{{ projekt.url }}" title="Über das Projekt">Mehr erfahren...</a></p>
+                    <p>{{ projekt.excerpt | strip_html | truncate: "300", "" | strip }}... <a
+                            href="{{site.baseurl}}{{ projekt.url }}" title="Über das Projekt">Mehr erfahren</a></p>
                 </div>
 
                 <div class="is-tab-wrap">

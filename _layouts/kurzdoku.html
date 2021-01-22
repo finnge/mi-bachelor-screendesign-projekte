@@ -91,6 +91,10 @@
                 <div class="content is-medium">
                     {{ content }}
                 </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container">
                 {% if page.gallery.size > 0 %}
                 <div class="swiper-container">
                     <div class="swiper-controls">
@@ -121,7 +125,21 @@
                 {% endif %}
             </div>
         </section>
-        
+
+        {% if page.styleguide %}
+        <section class="section">
+            <div class="container">
+                <div class="content is-medium">
+                    <h3>Style-Guide</h3>
+                    {%- if page.styleguide contains "http" -%}
+                    <img alt="Styleguide für das Projekt von {{ page.people | join: ' & '}}" src="{{ page.styleguide }}" style="width: 100%;">
+                    {%- else -%}
+                    <img alt="Styleguide für das Projekt von {{ page.people | join: ' & '}}" src="../{{ page.styleguide }}" style="width: 100%;">
+                    {% endif %}
+                </div>
+            </div>
+        </section>
+        {% endif %}        
 
         <footer class="footer is-non-print">
             <div class="container">
